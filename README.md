@@ -128,16 +128,6 @@ This is a group project. To contribute:
 - Group: Room 4
 - Add your name here when contributing
 
-## 📖 Resources
-
-- [Python Official Documentation](https://docs.python.org/3/)
-- [Python for Beginners](https://www.python.org/about/gettingstarted/)
-- [W3Schools Python Tutorial](https://www.w3schools.com/python/)
-
-## 📄 License
-
-This project is for educational purposes.
-
 ---
 
 **Note**: Some exercises require user input. When running the complete file, you'll be prompted to enter values for various exercises. Each section can also be run independently by copying the relevant code block.
