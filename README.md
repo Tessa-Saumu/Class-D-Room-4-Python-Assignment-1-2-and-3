@@ -1,13 +1,16 @@
-# Room 4 Python Assignment 1
+# Room 4 Python Assignments
 
-A comprehensive Python basics assignment covering fundamental programming concepts including variables, user input, operators, control flow, loops, data structures, and functions.
+A comprehensive collection of Python programming assignments covering fundamental concepts and Object-Oriented Programming (OOP). This repository contains two complete assignments designed to build strong Python programming skills from basics to advanced OOP concepts.
 
-## 📋 Assignment Overview
+## 📋 Repository Overview
 
-This project contains 30 exercises organized into 8 sections, designed to build foundational Python programming skills. Each section focuses on specific concepts and progressively increases in complexity.
+This repository contains:
+- **Assignment 1**: Python Basics (30 exercises)
+- **Assignment 2**: Object-Oriented Programming (30 exercises)
 
 ## 🎯 Learning Objectives
 
+### Assignment 1: Python Basics
 - Understand Python variables and data types
 - Handle user input and output
 - Implement conditional logic and operators
@@ -16,47 +19,78 @@ This project contains 30 exercises organized into 8 sections, designed to build 
 - Manipulate data structures (lists, tuples, sets, dictionaries)
 - Create and use functions
 
-## 📚 Assignment Sections
+### Assignment 2: Object-Oriented Programming
+- Understand classes and objects
+- Work with constructors (`__init__` method)
+- Use instance attributes and the `self` parameter
+- Create and call instance methods
+- Design real-world class models
+- Implement encapsulation and data management
+- Build interactive object behaviors
 
-### Section A: Basics & Variables (Questions 1-5)
+## 📚 Assignment 1: Python Basics
+
+### Sections Covered
+
+**Section A: Basics & Variables (Questions 1-5)**
 - Variable creation and assignment
-- Basic arithmetic operations (addition, multiplication, division)
+- Basic arithmetic operations
 - Print statements
 
-### Section B: User Input (Questions 6-8)
+**Section B: User Input (Questions 6-8)**
 - Collecting user input
-- Type conversion
-- String concatenation
-- Basic calculations with user data
+- Type conversion and string manipulation
 
-### Section C: Operators & Logic (Questions 9-12)
-- Comparison operators
-- Logical operators
+**Section C: Operators & Logic (Questions 9-12)**
+- Comparison and logical operators
 - Boolean expressions
-- Modulo operator for even/odd checking
 
-### Section D: If/Else Statements (Questions 13-16)
-- Conditional logic
-- Age verification
-- Password validation
-- Positive/negative number checking
+**Section D: If/Else Statements (Questions 13-16)**
+- Conditional logic and validation
 
-### Section E: Loops (Questions 17-20)
-- For loops with range
-- While loops
-- Loop iteration
-- Filtering with conditionals inside loops
+**Section E: Loops (Questions 17-20)**
+- For and while loops
+- Loop iteration and filtering
 
-### Section F: Data Structures (Questions 21-28)
-- Lists: creation, indexing, appending, iteration
-- Tuples: immutable sequences
-- Sets: handling duplicates
-- Dictionaries: key-value pairs and data access
+**Section F: Data Structures (Questions 21-28)**
+- Lists, tuples, sets, and dictionaries
 
-### Section G: Functions (Questions 29-30)
-- Function definition and calling
-- Parameters and return values
-- Function reusability
+**Section G: Functions (Questions 29-30)**
+- Function definition and parameters
+- Return values
+
+## 📚 Assignment 2: Object-Oriented Programming
+
+### Classes Implemented
+
+**Student Class (Exercises 1-14, 28)**
+- Attributes: name, age, grade
+- Methods: introduce, is_adult, increase_age
+- Demonstrates: basic class structure, instance methods, object lists
+
+**Car Class (Exercises 15-18, 29)**
+- Attributes: brand, speed
+- Methods: drive, increase_speed
+- Demonstrates: object creation, method invocation
+
+**BankAccount Class (Exercises 19-23)**
+- Attributes: balance
+- Methods: deposit, withdraw
+- Demonstrates: state management, data manipulation
+
+**Transaction Class (Exercise 30)**
+- Attributes: customer_name, item, amount, quantity
+- Methods: total_amount
+- Demonstrates: custom class design, calculations
+
+### Key OOP Concepts Covered
+- **Classes**: Blueprint for creating objects
+- **Objects**: Instances of classes with specific data
+- **`__init__` Method**: Constructor for initializing objects
+- **`self` Parameter**: Reference to the current instance
+- **Instance Attributes**: Data stored in each object
+- **Instance Methods**: Functions that operate on object data
+- **Encapsulation**: Bundling data and methods together
 
 ## 🚀 Getting Started
 
@@ -73,45 +107,62 @@ git clone <repository-url>
 cd <repository-name>
 ```
 
-2. Run the Python file:
+2. Run Assignment 1 (Python Basics):
 ```bash
 python "Room 4 Python Assignment 1.py"
 ```
 
-3. Follow the prompts for interactive exercises that require user input
-
-## 💡 Key Concepts Demonstrated
-
-- **Variables**: Storing and manipulating data
-- **Data Types**: Integers, strings, booleans, lists, tuples, sets, dictionaries
-- **Input/Output**: `input()` and `print()` functions
-- **Type Conversion**: `int()`, `str()` for data type changes
-- **Operators**: Arithmetic (`+`, `-`, `*`, `/`), comparison (`>`, `<`, `==`), logical (`and`, `or`)
-- **Control Flow**: `if`, `elif`, `else` statements
-- **Loops**: `for` and `while` loops with `range()`
-- **Functions**: Defining reusable code blocks with `def`
-
-## 📝 Example Exercises
-
-**Variable Assignment:**
-```python
-age = 34
-print(age)
+3. Run Assignment 2 (OOP):
+```bash
+python "Room 4 Python OOP Assignment.py"
 ```
 
-**User Input with Validation:**
+## 💡 Code Examples
+
+### Assignment 1: Basic Function
 ```python
-password = input('enter your password ')
-if password == 'python123':
-    print('yes password is correct')
-else:
-    print('no password is not correct')
+def sum_numbers(first_number, second_number):
+    sum = first_number + second_number
+    return sum
 ```
 
-**Loop Iteration:**
+### Assignment 2: Student Class
 ```python
-for i in range(1, 11):
-    print(i)
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name 
+        self.age = age
+        self.grade = grade
+        
+    def introduce(self):
+        print(f'Hello, my name is {self.name} and I am {self.age} years old.')
+
+student1 = Student('Grace', 27, 'A')
+student1.introduce()
+```
+
+### Assignment 2: BankAccount Class
+```python
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount 
+        print(f'Deposit {amount}, New balance is {self.balance}')
+
+account1 = BankAccount(250)
+account1.deposit(40)
+```
+
+## 📂 Repository Structure
+
+```
+Room-4-Python-Assignments/
+│
+├── Room 4 Python Assignment 1.py    # Python basics exercises
+├── Room 4 Python OOP Assignment.py  # Object-oriented programming exercises
+└── README.md                         # This file
 ```
 
 ## 🤝 Contributing
@@ -119,15 +170,45 @@ for i in range(1, 11):
 This is a group project. To contribute:
 
 1. Create a new branch for your work
-2. Make your changes
-3. Test your code thoroughly
-4. Submit a pull request with a clear description of changes
+```bash
+git checkout -b feature/your-feature-name
+```
+
+2. Make your changes and test thoroughly
+
+3. Commit your changes
+```bash
+git add .
+git commit -m "Description of changes"
+```
+
+4. Push to the branch
+```bash
+git push origin feature/your-feature-name
+```
+
+5. Submit a pull request with a clear description of changes
 
 ## 👥 Contributors
 
-- Group: Room 4
-- Add your name here when contributing
+- **Group**: Room 4
+- Add your name here when contributing to the project
 
----
+## 📖 Resources
 
-**Note**: Some exercises require user input. When running the complete file, you'll be prompted to enter values for various exercises. Each section can also be run independently by copying the relevant code block.
+### Python Basics
+- [Python Official Documentation](https://docs.python.org/3/)
+- [Python for Beginners](https://www.python.org/about/gettingstarted/)
+- [W3Schools Python Tutorial](https://www.w3schools.com/python/)
+
+### Object-Oriented Programming
+- [Python OOP Documentation](https://docs.python.org/3/tutorial/classes.html)
+- [Real Python - OOP in Python](https://realpython.com/python3-object-oriented-programming/)
+- [W3Schools Python Classes](https://www.w3schools.com/python/python_classes.asp)
+
+## 📝 Notes
+
+- **Assignment 1**: Some exercises require user input. When running the complete file, you'll be prompted to enter values.
+- **Assignment 2**: All exercises run automatically and demonstrate OOP concepts through practical examples.
+- Each assignment can be run independently
+- Code includes comments explaining each exercise
